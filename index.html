@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Keyur Mithari — Full Stack Java Developer</title>
+  <title>Keyur Mithari — Java Developer</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
@@ -16,7 +16,7 @@
     .avatar img{width:100%;height:100%;object-fit:cover;display:block}
     h1{margin:0;font-size:26px}
     p.lead{margin:6px 0 0;color:var(--muted)}
-    .hero{display:grid;grid-template-columns:1fr 320px;gap:24px;margin-top:22px}
+    .hero{display:grid;grid-template-columns:1fr;gap:24px;margin-top:22px} 
     .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.03);padding:18px;border-radius:12px}
     .section{margin-top:18px}
     .skills{display:flex;flex-wrap:wrap;gap:8px}
@@ -29,6 +29,10 @@
     .right-hero img{width:100%;height:100%;object-fit:cover;display:block}
     footer{margin-top:28px;color:var(--muted);font-size:13px;text-align:center}
     @media (max-width:880px){.hero{grid-template-columns:1fr;}.right-hero{height:220px}}    
+    .flow{margin-top:18px;display:flex;justify-content:center}
+    .flow .card{padding:14px}
+    .flow svg{max-width:100%;height:auto}
+    .flow .step{font-family:Inter,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;font-size:13px;fill:#e6eef8}
   </style>
 </head>
 <body>
@@ -41,7 +45,7 @@
       <div>
         <h1>Keyur Mithari</h1>
         <p class="lead">Java Developer • Spring Boot, Microservices, Kafka, Payments</p>
-        <p style="margin-top:8px;color:var(--muted)">Pune, India • <a href="mailto:mitharik123@gmail.com" style="color:inherit;text-decoration:underline">mitharik123@gmail.com</a> • +91 70573 39909</p>
+        <p style="margin-top:8px;color:var(--muted)">Pune, India • <a href="mailto:mitharikeyur246@gmail.com" style="color:inherit;text-decoration:underline">mitharikeyur246@gmail.com</a> • +91 70573 39909</p>
       </div>
     </header>
 
@@ -49,23 +53,30 @@
       <main class="card">
         <section>
           <h3>Professional Summary</h3>
-          <p style="color:var(--muted)">Java Developer with ~3.6 years of experience building Spring Boot microservices, payment systems, and event-driven architectures using Kafka & IBM MQ. Focused on scalable REST APIs, secure integrations, and improving observability.</p>
+          <p style="color:var(--muted)">Java Developer with 4 years of experience in Spring Boot, Microservices, Kafka, and AWS — specializing in designing scalable REST APIs and payment systems. Skilled in Java (Java 8), SQL, and CI/CD pipelines, with a strong track record of improving system performance and delivering secure, high-quality solutions in Agile environments.</p>
         </section>
 
         <section class="section">
           <h3>Skills</h3>
           <div class="skills">
-            <span class="skill">Java</span>
+            <span class="skill">Java / Java 8</span>
             <span class="skill">Spring Boot</span>
+            <span class="skill">Spring Batch</span>
+            <span class="skill">Spring Cloud</span>
             <span class="skill">Microservices</span>
-            <span class="skill">Kafka</span>
-            <span class="skill">IBM MQ</span>
+            <span class="skill">REST API</span>
             <span class="skill">JPA / Hibernate</span>
             <span class="skill">Thymeleaf</span>
+            <span class="skill">Apache Kafka</span>
+            <span class="skill">IBM MQ</span>
+            <span class="skill">Oracle / MySQL / PostgreSQL</span>
+            <span class="skill">JavaScript / HTML / CSS</span>
             <span class="skill">AWS</span>
-            <span class="skill">Docker</span>
-            <span class="skill">Kubernetes</span>
-            <span class="skill">CI/CD</span>
+            <span class="skill">CI/CD (TeamCity, Jenkins, UDeploy)</span>
+            <span class="skill">Docker / Kubernetes</span>
+            <span class="skill">Git / Maven</span>
+            <span class="skill">TDD / Agile / Scrum</span>
+            <span class="skill">SWIFT ISO20022</span>
           </div>
         </section>
 
@@ -73,46 +84,61 @@
           <h3>Projects</h3>
           <div class="proj">
             <h4>Transactional Report Portal</h4>
-            <p style="color:var(--muted)">Secure portal for real-time transaction reporting with Maker-Checker flow, filters and role-based access. Tech: Spring Boot, Spring Security, JPA, Thymeleaf.</p>
+            <p style="color:var(--muted)">Built a secure portal for real-time transaction data reporting, cutting manual reporting effort by 60%. Implemented Maker-Checker workflow with Spring Security (RBAC), filters (transaction ID, date range) and approval workflows with status tracking.</p>
+            <p style="color:var(--muted)"><strong>Tech:</strong> Java, Spring Boot, Spring Security, JPA (Hibernate), Thymeleaf, MySQL/PostgreSQL, Maven, Git.</p>
           </div>
           <div class="proj">
             <h4>Payment Router System</h4>
-            <p style="color:var(--muted)">Payment router to transform and route legacy payments into Kafka-based pipelines. Implemented XML↔JSON bridges and partner adapters.</p>
+            <p style="color:var(--muted)">Developed a Payment Router service to standardize and route payment transactions from a legacy system. Implemented real-time XML→JSON transformations and integrated with Apache Kafka for asynchronous, high-throughput delivery.</p>
+            <p style="color:var(--muted)"><strong>Tech:</strong> Java, Spring Boot, Kafka, IBM MQ, REST APIs, Maven.</p>
           </div>
         </section>
 
         <section class="section">
           <h3>Certifications & Education</h3>
-          <p style="color:var(--muted)">Oracle Certified Java SE Programmer I • BE Computer Engineering — A P Shah Institute Of Technology (8.3 CGPA)</p>
+          <p style="color:var(--muted)"><strong>Certification:</strong> Oracle Certified Java SE Programmer I.</p>
+          <p style="color:var(--muted)"><strong>Education:</strong> BE Computer Engineering — A P Shah Institute Of Technology, Thane (Aug 2017 - Jun 2021). CGPA: 8.3</p>
+        </section>
+
+        <section class="section">
+          <h3>Work Experience</h3>
+
+          <p style="color:var(--muted)"><strong>PWC — Associate 2, Payments Engineering</strong><br><em>Oct 2025 - Present</em></p>
+          <ul style="color:var(--muted);margin-top:8px;margin-bottom:18px">
+            <li>Working on a high‑performance payment engine responsible for processing wire payments (domestic & cross‑border).</li>
+            <li>Building event‑driven microservices using Java, Spring Boot, Kafka, and REST APIs.</li>
+            <li>Enhancing wire processing flows including validation, enrichment, posting, and settlement steps.</li>
+            <li>Improving reliability, throughput, and fault‑tolerance of the payment processor.</li>
+            <li>Collaborating with architects to modernize legacy modules into scalable microservices aligned with enterprise design standards.</li>
+          </ul>
+
+          <p style="color:var(--muted)"><strong>Tata Consultancy Services, Pune — Java Spring Boot Developer</strong><br><em>Dec 2021 - Present</em></p>
+          <ul style="color:var(--muted);margin-top:8px">
+            <li>Re-engineered a monolithic application into two Spring Boot microservices, improving scalability and maintainability.</li>
+            <li>Built Balance Fetch API to route inquiry requests dynamically, reducing latency by ~40% and improving accuracy.</li>
+            <li>Designed configurable reusable service components, reducing new partner onboarding time by ~30%.</li>
+            <li>Implemented Kafka & IBM MQ integration for real-time, high-throughput communication with partner systems.</li>
+            <li>Resolved defects across legacy Java and Spring Boot applications, reducing production issues by 25% over 2 quarters.</li>
+            <li>Collaborated in Agile/Scrum ceremonies with QA, DevOps, and Product teams to ensure on-time delivery.</li>
+          </ul>
         </section>
 
         <section class="section">
           <h3>Contact & Download</h3>
           <div class="contact">
-            <a class="btn" href="mailto:mitharik123@gmail.com">Email Me</a>
-            <!-- Replace the href below with the hosted URL of your PDF resume when you publish -->
+            <a class="btn" href="mailto:mitharikeyur246@gmail.com">Email Me</a>
             <a class="btn" href="#" onclick="alert('Replace this link with your hosted resume URL')">Download Resume (PDF)</a>
             <a class="btn" href="https://github.com/" target="_blank" rel="noopener">View on GitHub</a>
           </div>
         </section>
       </main>
 
-      <aside class="right-hero card">
-        <!-- decorative external image (Unsplash) -->
-        <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=1200&q=80" alt="code background">
-      </aside>
-    </div>
 
     <div class="section card">
       <h3>How I work</h3>
       <p style="color:var(--muted)">I prefer writing clean, testable code and shipping small incremental features. Strong believer in observability — logging, metrics and tracing — especially for payment systems.</p>
       <p style="color:var(--muted)"><strong>Availability:</strong> Open to interviews and contract work. Based in Pune, India.</p>
     </div>
-
-    <footer>
-      Built with ♥ • Designed for quick GitHub Pages deployment
-    </footer>
-  </div>
 
   <!-- small script to make resume download actionable on the hosted site -->
   <script>
